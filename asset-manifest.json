@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/mygitpage/static/css/main.073c9b0a.css",
-    "main.js": "/mygitpage/static/js/main.7bdb4ba6.js",
-    "index.html": "/mygitpage/index.html",
-    "main.073c9b0a.css.map": "/mygitpage/static/css/main.073c9b0a.css.map",
-    "main.7bdb4ba6.js.map": "/mygitpage/static/js/main.7bdb4ba6.js.map"
+    "main.css": "/mygitpage/home/static/css/main.0ed91142.css",
+    "main.js": "/mygitpage/home/static/js/main.6337b3f9.js",
+    "static/media/pexels-miguel-á-padriñán-19670.jpg": "/mygitpage/home/static/media/pexels-miguel-á-padriñán-19670.560e38e799908a8a535a.jpg",
+    "static/media/GvBild.png": "/mygitpage/home/static/media/GvBild.566ccb87a1e5dffde350.png",
+    "static/media/meme.jpg": "/mygitpage/home/static/media/meme.6679950eae6f6c1f2484.jpg",
+    "index.html": "/mygitpage/home/index.html",
+    "main.0ed91142.css.map": "/mygitpage/home/static/css/main.0ed91142.css.map",
+    "main.6337b3f9.js.map": "/mygitpage/home/static/js/main.6337b3f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7bdb4ba6.js"
+    "static/css/main.0ed91142.css",
+    "static/js/main.6337b3f9.js"
   ]
 }
