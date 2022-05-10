@@ -1,0 +1,48 @@
+[
+    {
+        "courseName": "Development with C#",
+        "points": "30"
+    },
+    {
+        "courseName": "Object oriented programming",
+        "points": "30"
+    },
+    {
+        "courseName": "Agile development in teams",
+        "points": "20"
+    },
+    {
+        "courseName": "Database development and administration",
+        "points": "25"
+    },
+    {
+        "courseName": "Advanced .NET",
+        "points": "40"
+    },
+    {
+        "courseName": "Webb development",
+        "points": "25"
+    },
+    {
+        "courseName": "System testing for frontend developers",
+        "points": "25"
+    },
+    {
+        "courseName": "Advanced system development with ASP, .NET",
+        "points": "55"
+    },
+    {
+        "courseName": "Internship 1 - Basic development",
+        "points": "70"
+    },
+    {
+        "courseName": "Internship 2 - Advanced development",
+        "points": "50"
+    },
+    {
+        "courseName": "Degree Project",
+        "points": "30"
+    }
+
+
+]

@@ -1,38 +1,321 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap%27");
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  background-image: url("/public/Gfx/pexels-miguel-á-padriñán-19670.jpg");
+}
+.navbar h2 {
+  float: left;
+  margin-bottom: -10%;
+  margin-top: 25px;
+  font-size: 40px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  padding: 150px 10%;
+  margin-right: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 5%;
+  height: 100px;
+  background-image: linear-gradient(to left, #2b317c, lightblue);
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 200ms ease;
+}
+
+.navbar .links li {
+  list-style: none;
+}
+
+#box {
+  display: none;
+}
+
+.checkbtn {
+  display: none;
+}
+.links p {
+  font-weight: bold;
+}
+
+@media (max-width: 858px) {
+  .navbar {
+    height: 61px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar .links {
+    width: 150px;
+    flex-wrap: wrap;
+    height: auto;
+    background-image: linear-gradient(to left, #30387f, #5d70a2);
+    transform: translateX(300px);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  .navbar h2 {
+    float: left;
+    margin-bottom: -10%;
+    margin-top: 15px;
+    font-size: 30px;
+  }
+
+  #box:checked ~ .links {
+    display: block;
+    transform: translateX(0px);
+  }
+
+  .checkbtn {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+    width: auto;
+    text-align: end;
+    color: white;
+  }
+
+  .extra {
+    display: none;
+  }
+  .content {
+    width: 80%;
+    margin-right: 0%;
+  }
+
+  .content-text {
+    width: 100% !important;
   }
 }
+
+.navbar .links a {
+  display: block;
+  padding: 1em;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 200ms ease;
+}
+
+.links a:hover {
+  transition: 200ms ease;
+  font-size: 20px;
+}
+
+.active a {
+  color: white;
+  font-size: 20px !important;
+}
+
+.content-text {
+  height: auto;
+  width: 60%;
+  float: left;
+}
+
+.extra {
+  height: auto;
+  width: 30%;
+  float: left;
+  right: 10%;
+  text-align: center;
+  position: fixed;
+  top: 150px;
+}
+
+.bild {
+  height: 150px;
+  width: 150px;
+  background-image: url("/public/Gfx/GvBild.png");
+  background-position: top;
+  background-size: 250px;
+  background-position-y: -20px;
+  margin-left: calc(50% - 75px);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  border: 0;
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: lightblue;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 150ms ease;
+  max-width: 300px;
+}
+#buttonShow {
+  display: block;
+}
+#buttonDel {
+  display: none;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  box-shadow: none;
+}
+#buttonShowSec {
+  display: none;
+}
+#buttonDelSec {
+  display: none;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  box-shadow: none;
+}
+button .first {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.3s ease;
+  float: left;
+}
+
+button:focus > .first {
+  font-size: 0;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: 0.3s ease;
+}
+
+button .sec {
+  font-size: 0;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: 0.3s ease;
+  float: left;
+}
+
+button:focus > .sec {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.3s ease;
+  font-size: 18px;
+}
+
+button:focus {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  box-shadow: none;
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+
+.icon {
+  height: 18px;
+  width: auto;
+  float: left;
+}
+
+.content iframe {
+  width: 100%;
+  margin-top: 24px;
+  border-radius: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  float: left;
+  width: 100%;
+  padding: 50px 0px;
+  background: linear-gradient(to left, #30387f, #5d70a2);
+  margin-top: 200px;
+  text-align: center;
+}
+#meme {
+  position: relative;
+  left: 0%;
+  display: none;
+  background-image: url("/public/Gfx/meme.jpg");
+  height: 400px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hiddenMeme {
+  float: left;
+  z-index: 10000 !important;
+  width: 1px;
+  height: 1px;
+  margin-top: 1px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: none;
+  transition: 0;
+  background-color: black;
+  font-weight: bold;
+}
+#easterEgg{
+  display: none;
+  z-index: 10000;
+  position: fixed;
+  padding-top: 40vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 200px;
+  color: white;
+}
+.Line {
+  height: .1px;
+  margin-top: 2rem;
+}
+.repos-div .button {
+  width: 100%;
+  margin-top: 20px;
+  border: 0;
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: lightblue;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 150ms ease;
+  max-width: 300px;
+  text-decoration: none;
+  
+}
+.buttonL a{
+  text-decoration: none;
+  color: black;
+}
+h1 .icon{
+  margin-top: 4px;
+  margin-right: 10px;
+  height: 30px;
+}
+
+
+
